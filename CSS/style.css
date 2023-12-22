@@ -26,6 +26,7 @@ span{
     font-weight: bold;
 }
 
+
 a{
     text-decoration: none;
     color: var(--text-color);
@@ -42,10 +43,17 @@ header{
     margin-top: 5%;
 }
 
+header a{
+    display: flex;
+    text-align: right;
+    justify-items: center;
+}
+
 .menu{
     background-color: transparent;
     border: 0;
 }
+
 
 .button{
     display: flex;
@@ -74,6 +82,9 @@ header{
 
 }
 
+.button-black img{
+    margin-right: 10px ;
+}
 
 .button-white{
     background-color: var(--button-color2);
@@ -90,18 +101,21 @@ header{
     font-size: 1.4rem;
 }
 
+.button-arrow img{
+    margin-left: 5px;
+}
+
 .wrapper{
     margin-top: 25%;
     
 }
 
-img{
-    margin-block: 5%;
-}
 
 .pict{
+    display: flex;
     margin-inline: 8%;
-
+    max-width: 100%;
+    justify-content: center;
 }
 
 li{
@@ -142,34 +156,73 @@ h1{
 
 }
 
+.services img{
+    width: 150px;
+    padding-bottom: 10%;
+}
+
+.services li{
+    border-style: solid;
+    border-color: darkgray;
+    border-width: 1px;
+    border-radius: 14%;
+    background-color: var(--li-bg-color);
+    padding-block: 12%;
+    padding-inline: 14%;
+    margin-block: 4%;
+}
+
 .portfolio{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.portfolio img{
+    width: 250px;
+    margin-bottom: -12%;
+}
+.portfolio li{
+    margin-bottom: 12%;
+}
+
+.portfolio, .services {
+    font-weight: bolder;
+}
 
 .quote{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     background-color: var(--li-bg-color);
     color: var(--text-color);
     border-radius: 30px;
     margin-inline: 6%;
     align-items: center;
     justify-content:space-evenly;
-    padding-bottom: 5%;
-    padding-inline: 3%;
+    padding-block: 8%;
+    padding-inline: 8%;
+
+    font-size: 1.4rem;
 }
 
-q{
+.quote p{
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+.quote span{
     font-weight: lighter;
+    font-size: 1.1rem;
+}
+
+.quote q{
+    margin-top: 5%;
 }
 
 .contacts{
     display: flex;
     margin-inline: 6%;
-    margin-top: 3%;
+    margin-block: 3%;
     justify-content: space-evenly;
 
 }
@@ -177,7 +230,7 @@ q{
 .footer-logo{
     background-color: var(--button-color2);
     border-radius: 24px;
-    border-color: azure;
+    border-color: var(--button-color2);
     border-width: 1px;
 
     display: flex;
@@ -207,14 +260,63 @@ q{
     }
    .text{
     margin-block: 5%;
-   }
+    }
+    header{
+        font-size: 2.1rem;
+    }
    .button{
     border-radius: 36px;
     font-size: 1.2rem;
-   }
-   .pict{
-    max-width: 400px;
-   }
+    }
+    .quote p{
+        font-size: 2.7rem;
+    }
+    .quote span{
+        font-size: 1.8rem;
+    }
+    .quote{
+        font-size: 1.8rem;
+    }
+    .portfolio, .services{
+        font-size: 1.6rem;
+    }
+
+    .portfolio img{
+        width: 300px;
+    }
+    .services img{
+        width: 200px;
+    }
+    .button-arrow img, .button-black img{
+        width: 20px;
+    }
+    header img{
+        width: 45px;
+    }
+    .quote img{
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 750px){
+    .portfolio img{
+        width: 500px;
+    }
+    .services img{
+        width: 150px;
+    }
+    .button-arrow img, .button-black img{
+        width: 30px;
+    }
+    header img{
+        width: 60px;
+    }
+    .pict{
+        width: 500px;
+    }
+    .quote img{
+        width: 150px;
+    }
 }
 
 @media screen and (min-width: 1000px){
@@ -225,6 +327,9 @@ q{
      margin-block: 4%;
      font-size: 2.1rem;
      line-height: 2.1rem;
+    }
+    header{
+        font-size: 3.2rem;
     }
     .subheader{
         font-size: 3.6rem;
@@ -241,8 +346,58 @@ q{
         border-radius: 54px;
         font-size: 1.8rem;
     }
+    .quote{
+        font-size: 2.7rem;
+    }
+    .portfolio, .services{
+        font-size: 2.4rem;
+    }
 
+    
+    .portfolio img{
+        width: 500px;
+    }
+    .services img{
+        width: 200px;
+    }
+    .button-arrow img, .button-black img{
+        width: 45px;
+    }
+    header img{
+        width: 75px;
+    }
+    .pict{
+        width: 650px;
+    }
+    .quote img{
+        width: 200px;
+    }
+    .contacts img{
+        width: 80px;
+    }
  }
+
+ @media screen and (min-width: 1250px){
+    .portfolio img{
+        width: 700px;
+    }
+    .services img{
+        width: 250px;
+    }
+    .button-arrow img, .button-black img{
+        width: 30px;
+    }
+    header img{
+        width: 60px;
+    }
+    .pict{
+        width: 500px;
+    }
+    .quote img{
+        width: 250px;
+    }
+}
+
 
  @media screen and (min-width: 1500px){
     .wrapper{
@@ -269,7 +424,29 @@ q{
         border-radius: 81px;
         font-size: 2.8rem;
     }
+
+
+    .portfolio img{
+        width: 700px;
+    }
+    .services img{
+        width: 250px;
+    }
+    .button-arrow img, .button-black img{
+        width: 45px;
+    }
+    header img{
+        width: 60px;
+    }
+    .pict{
+        width: 500px;
+    }
+    .quote img{
+        width: 250px;
+    }
  }
+
+
 
  @media screen and (min-width: 2000px){
     .wrapper{
