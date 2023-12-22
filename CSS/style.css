@@ -9,35 +9,12 @@
     --shade-color: rgba(55, 125, 255, 0.5);
     --li-border-color: rgba(255, 255, 255, 0.1);
     --li-bg-color: rgba(11, 15, 21, 1);
-
     --quicksand-font: 'Quicksand', sans-serif;
-    
+}
 
-    margin-top: 5%;
-    
+html{
+    font-size: 16px;
     font-family: var(--quicksand-font);
-}
-
-
-body{
-    color:var(--text-color);
-}
-
-
-header{
-    display: flex;
-    justify-content:space-between;
-    font-size: 14px;
-    font-weight: bolder;
-
-    margin-top: 4%;
-    margin-inline: 6%;
-}
-
-
-.top, section{
-    margin-top: 20%;
-    margin-inline: 5%;
 }
 
 
@@ -45,30 +22,25 @@ footer{
     background-color: var(--footer-bg-color);
 }
 
-
+span{
+    font-weight: bold;
+}
 
 a{
     text-decoration: none;
     color: var(--text-color);
-    font-weight: bold;
-    font-family: var(--quicksand-font);
-    vertical-align: middle;
+    font-weight: lighter;
 }
 
 
-.main-wrapper{
-    text-align: center;
-    align-items: center;
-}
-
-
-.logo{
+header{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    height: fit-content;
-}
 
+    margin-inline: 8%;
+    margin-top: 5%;
+}
 
 .menu{
     background-color: transparent;
@@ -77,15 +49,19 @@ a{
 
 .button{
     display: flex;
+    flex-wrap: nowrap;
+    max-width: fit-content;
+    align-items: center;
+
     border-radius: 24px;
-    width: fit-content;
     
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: bold;
 
-    margin-block: 5%;
-    padding-block: 15px;
-    padding-inline: 40px;
+    margin-block: 8%;
+    margin-inline: 8%;
+    padding-block: 3%;
+    padding-inline: 5%;
 }
 
 
@@ -109,124 +85,218 @@ a{
 .button-arrow{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-left: 5%;
-    margin-block: 2%;
+    margin-left: 8%;
+    max-width: fit-content;
+    font-size: 1.4rem;
 }
 
+.wrapper{
+    margin-top: 25%;
+    
+}
 
-
-
-
-.link{
+img{
     margin-block: 5%;
 }
 
+.pict{
+    margin-inline: 8%;
 
+}
+
+li{
+    text-align: center;
+    margin-block: 2%;
+
+}
 
 .text{
     line-height: 1.4rem;
     font-weight: 300;
-    font-size: 14px;
-    margin-top: 12%;
+    font-size: 1.4rem;
+
+    text-align: center;
+    color: var(--text-color);
+
+    margin-block: 10%;
     margin-inline: 4%;
 }
 
 .subheader{
-    font-size: 24px;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
 }
 
-
 h1{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bolder;
     margin-block: 5%;
 }
 
 
-ul{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-flow: column;
-    align-items: center;
-    font-size: 1.4rem;
-}
-
-
-li{
+.services{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    margin-block: 5%;
+
 }
 
-.services{
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 30px;
-    min-height: 260px;
-    min-width: 260px;
-    background-color: var(--li-bg-color);
-    border-color: var(--li-border-color);
-    
-    margin-block: 8%;
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .quote{
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(11, 15, 21, 1);
-    border-radius: 20px;
-    min-height: 260px;
-    min-width: 340px;
-    align-content: space-around;
-
-    margin-block: 10%;
-    padding-inline: 5%;
+    background-color: var(--li-bg-color);
+    color: var(--text-color);
+    border-radius: 30px;
+    margin-inline: 6%;
+    align-items: center;
+    justify-content:space-evenly;
+    padding-bottom: 5%;
+    padding-inline: 3%;
 }
 
+q{
+    font-weight: lighter;
+}
+
+.contacts{
+    display: flex;
+    margin-inline: 6%;
+    margin-top: 3%;
+    justify-content: space-evenly;
+
+}
 
 .footer-logo{
+    background-color: var(--button-color2);
+    border-radius: 24px;
+    border-color: azure;
+    border-width: 1px;
+
     display: flex;
-    background-color: rgba(226, 226, 226, 1);
-    width: fit-content;
-    padding-inline: 5%;
-    padding-block: 5%;
-    border-radius: 20px;
-    justify-content: center;
     align-items: center;
-    color: black;
-
-    margin-block: 10%;
-    margin-inline: 10%;
+    max-width: fit-content;
+    padding-inline: 4%;
+    padding-block: 3%;
+    margin-inline: 5%;
 }
-
 
 .footer-content{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-block: 5%;
-    margin-block: 5%;
-}
-
-
-.contacts{
-    display: flex;
-    justify-content: space-evenly;
+    width: fit-content;
     margin-inline: 5%;
+
+    color: var(--text-color);
+    font-weight: bolder;
+    line-height: 1.4rem;
+    margin-top: 3%;
 }
 
-
-@media screen and (min-width: 720px){
-    header{
-        height: 90px;
+@media screen and (min-width: 500px){
+    .wrapper{
+        margin-top: 14%;
     }
+   .text{
+    margin-block: 5%;
+   }
+   .button{
+    border-radius: 36px;
+    font-size: 1.2rem;
+   }
+   .pict{
+    max-width: 400px;
+   }
 }
 
+@media screen and (min-width: 1000px){
+    .wrapper{
+        margin-top: 10%;
+    }
+    .text{
+     margin-block: 4%;
+     font-size: 2.1rem;
+     line-height: 2.1rem;
+    }
+    .subheader{
+        font-size: 3.6rem;
+        line-height: 3.6rem;
+    }
+    h1{
+        font-size: 2.4em;
+        line-height: 2.4rem;
+    }
+    .button-arrow{
+        font-size: 2.1rem;
+    }
+    .button{
+        border-radius: 54px;
+        font-size: 1.8rem;
+    }
+
+ }
+
+ @media screen and (min-width: 1500px){
+    .wrapper{
+        margin-top: 12%;
+    }
+    .text{
+     margin-block: 5%;
+     font-size: 3.2rem;
+     line-height: 3.2rem;
+    }
+    .subheader{
+        font-size: 5.4rem;
+        line-height: 5.4rem;
+    }
+    h1{
+        font-size: 3.6em;
+        line-height: 3.6rem;
+   
+    }
+    .button-arrow{
+        font-size: 3.2rem;
+    }
+    .button{
+        border-radius: 81px;
+        font-size: 2.8rem;
+    }
+ }
+
+ @media screen and (min-width: 2000px){
+    .wrapper{
+        margin-top: 12%;
+    }
+    .text{
+     margin-block: 5%;
+     font-size: 4.8rem;
+     line-height: 4.8rem;
+    }
+    .subheader{
+        font-size: 8.1rem;
+        line-height: 8.1rem;
+    }
+    h1{
+        font-size: 5.4em;
+        line-height: 5.4rem;
+   
+    }
+    .button-arrow{
+        font-size: 4.8rem;
+    }
+    .button{
+        border-radius: 120px;
+        font-size: 4.2rem;
+    }
+ }
 
 .menu:hover{
     scale: 110%;
