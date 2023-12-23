@@ -1,5 +1,5 @@
 :root{
-    background-color: rgba(13, 13, 13, 1);
+    --bg-color: rgba(13, 13, 13, 1);
     --text-color: rgba(226, 226, 226, 1);
     --elem-background-color: rgba(11, 15, 21, 1);
     --footer-bg-color: rgba(56, 54, 56, 1);
@@ -15,6 +15,7 @@
 html{
     font-size: 16px;
     font-family: var(--quicksand-font);
+    background-color: var(--bg-color);
 }
 
 
@@ -31,6 +32,7 @@ a{
     text-decoration: none;
     color: var(--text-color);
     font-weight: lighter;
+    font-size: 1rem;
 }
 
 
@@ -40,13 +42,13 @@ header{
     align-items: center;
 
     margin-inline: 8%;
-    margin-top: 5%;
+    margin-top: 8%;
+    margin-bottom: -10%;
 }
 
-header a{
-    display: flex;
-    text-align: right;
-    justify-items: center;
+
+header img{
+    width: 40px;
 }
 
 .menu{
@@ -63,13 +65,13 @@ header a{
 
     border-radius: 24px;
     
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: bold;
 
     margin-block: 8%;
     margin-inline: 8%;
-    padding-block: 3%;
-    padding-inline: 5%;
+    padding-block: 4%;
+    padding-inline: 8%;
 }
 
 
@@ -97,8 +99,10 @@ header a{
     display: flex;
     align-items: center;
     margin-left: 8%;
+    margin-bottom: 3%;
     max-width: fit-content;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    font-weight: bolder;
 }
 
 .button-arrow img{
@@ -113,9 +117,9 @@ header a{
 
 .pict{
     display: flex;
-    margin-inline: 8%;
-    max-width: 100%;
-    justify-content: center;
+    max-width: 80%;
+    margin-inline: 10%;
+
 }
 
 li{
@@ -126,26 +130,30 @@ li{
 
 .text{
     line-height: 1.4rem;
-    font-weight: 300;
-    font-size: 1.4rem;
+    font-weight: lighter;
+    font-size: 0.8rem;
 
     text-align: center;
     color: var(--text-color);
 
     margin-block: 10%;
-    margin-inline: 4%;
+    margin-inline: 6%;
 }
 
 .subheader{
     font-weight: bolder;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     line-height: 2.4rem;
 }
 
+
+
 h1{
-    font-size: 1.6rem;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1rem;
     font-weight: bolder;
-    margin-block: 5%;
+    margin-block: -6%;
 }
 
 
@@ -157,7 +165,7 @@ h1{
 }
 
 .services img{
-    width: 150px;
+    width: 100px;
     padding-bottom: 10%;
 }
 
@@ -166,9 +174,11 @@ h1{
     border-color: darkgray;
     border-width: 1px;
     border-radius: 14%;
-    background-color: var(--li-bg-color);
+    background-color: var(--bg-color);
+    font-weight: bolder;
+
     padding-block: 12%;
-    padding-inline: 14%;
+    padding-inline: 16%;
     margin-block: 4%;
 }
 
@@ -180,11 +190,14 @@ h1{
 
 .portfolio img{
     width: 250px;
-    margin-bottom: -12%;
+    margin-bottom: -16%;
 }
 .portfolio li{
     margin-bottom: 12%;
+    font-weight: bolder;
+    font-size: 1.4rem;
 }
+
 
 .portfolio, .services {
     font-weight: bolder;
@@ -203,16 +216,17 @@ h1{
     padding-block: 8%;
     padding-inline: 8%;
 
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
 }
 
 .quote p{
     font-weight: bolder;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 .quote span{
     font-weight: lighter;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .quote q{
@@ -232,13 +246,30 @@ h1{
     border-radius: 24px;
     border-color: var(--button-color2);
     border-width: 1px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
 
     display: flex;
     align-items: center;
     max-width: fit-content;
-    padding-inline: 4%;
-    padding-block: 3%;
-    margin-inline: 5%;
+    padding-inline: 6%;
+    padding-block: 5%;
+    margin-inline: 6%;
+}
+
+
+.footer-logo img{
+    width: 60px;
+    margin-right: 5%;
+}
+
+header .footer-logo{
+    background-color: transparent;
+    margin-left: -3%;
+}
+
+header .footer-logo img{
+    width: 50px;
 }
 
 .footer-content{
@@ -250,10 +281,27 @@ h1{
 
     color: var(--text-color);
     font-weight: bolder;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
     margin-top: 3%;
 }
+.footer-content address{
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
 
+.copyright{
+    color: var(--text-color);
+    font-weight: lighter;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 500px){
+
+}
+
+/*
 @media screen and (min-width: 500px){
     .wrapper{
         margin-top: 14%;
@@ -388,16 +436,15 @@ h1{
         width: 30px;
     }
     header img{
-        width: 60px;
+        width: 90px;
     }
     .pict{
-        width: 500px;
+        width: 850px;
     }
     .quote img{
         width: 250px;
     }
 }
-
 
  @media screen and (min-width: 1500px){
     .wrapper{
@@ -436,10 +483,10 @@ h1{
         width: 45px;
     }
     header img{
-        width: 60px;
+        width: 105px;
     }
     .pict{
-        width: 500px;
+        width: 1000px;
     }
     .quote img{
         width: 250px;
@@ -474,7 +521,7 @@ h1{
         font-size: 4.2rem;
     }
  }
-
+*/
 .menu:hover{
     scale: 110%;
 }
@@ -492,10 +539,20 @@ h1{
 }
 
 
-.logo:hover{
+header .footer-logo:hover{
     scale: 105%;
 }
 
-li:hover{
+.services li:hover{
+    scale: 105%;
+    background-color: var(--li-bg-color);
+}
+
+.portfolio li:hover{
     scale: 105%;
 }
+
+.contacts img:hover{
+    scale: 110%;
+}
+
