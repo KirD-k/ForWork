@@ -253,11 +253,6 @@ span{
     margin-right: 10%;
 }
 
-footer{
-    padding-top: 15%;
-    padding-inline: 5%;
-}
-
 .footer-content{
     display: flex;
     flex-wrap: wrap;
@@ -322,9 +317,82 @@ footer .logo img{
     padding-block: 2%;
 }
 
-*:focus{
+html, body { height: 100%;}
+
+footer{
+    padding-top: 15%;
+    padding-inline: 5%;
+    position: sticky;
+    top: 100vh;
+}
+
+label > span{
+    color: red;
+}
+
+form{
+    background-color: rgb(133 150 169);
+    margin-inline: 8%;
+    padding: 6%;
+    border: 0.2vw solid rgb(143, 137, 137);
+    border-radius: 5vw;
+}
+
+form li+li{
+    margin-top: 3%;
+}
+
+button.button {
+    font-size: var(--smaller-text);
+}
+
+label {
+    color: aliceblue;
+    font-size: var(--average-text);
+    font-weight: bold;
+}
+
+label strong{
+    font-weight: lighter;
+    margin-top: 5%;
+}
+
+li > input{
+    box-sizing: border-box;
+    margin-left: 3%;
+    padding: 1%;
+    border-radius: 0.5vw;
+    height: 10%;
+    font-size: var(--smaller-text);
+}
+
+li > select{
+    margin-left: 3%;
+    padding: 0.5%;
+    font-size: var(--small-text);
+}
+
+option{
+    font-size: var(--smaller-text);
+}
+
+li p{
+    margin-top: 2%;
+}
+
+form ul li:nth-child(3) input{
+    height: 2vw;
+    width: 2vw;
+}
+
+form ul li:last-child{
+    padding-inline: 10%;
+}
+
+a:focus, button:focus, input:focus{
     color: blue;
 }
+
 
 .button:focus, .button:hover,
 .menu:hover, 
@@ -342,7 +410,7 @@ footer .logo img{
 .services li:hover, .services li:focus{
     background-color: rgba(13, 22, 35, 1);
 }
-/*
+
 @media screen and (orientation: portrait){
     .landscape{
         display: none;
@@ -427,7 +495,7 @@ footer .logo img{
         }
     }
 
-}*/
+}
 
 @media screen and (orientation: landscape){
     
@@ -450,6 +518,7 @@ footer .logo img{
         width: 14vw;
         line-height: var(--line-small);
     }
+
 
     .wrapper :first-child :first-child {
         margin-inline: 8%;
@@ -519,6 +588,17 @@ footer .logo img{
     .contacts img{
         width: 5vw;
         margin-inline: 1%;
+    }
+
+    footer .logo{
+        width: 14vw;
+        height: 2vw;
+        border-radius: 4vw;
+    }
+
+    .footer-content{
+        font-size: var(--smaller-text);
+        line-height: var(--line-small);
     }
 
     @media (min-width: 768px) {
