@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="CSS/formstyle.css">
+    <title>Forms</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Logo.svg" alt="">
+            <a href="grid.html"><span>Agency</span><br>Creative</a>
+        </div>
+
+        <div class="landscape">
+            <a href=""><span>Home</span></a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Projects</a>
+            <a href="" class="button black">Contact us</a>
+        </div>
+
+        <button class="menu">
+            <img src="img/Menu.svg" alt="">
+        </button>
+    </header>
+
+    <main>
+        <body>
+            <form action="">
+                <ul>
+                    <li>
+                        <label for="name" ><span aria-label="required">*</span>Name:</label>
+                        <input type="text" placeholder="Ivanov Ivan Ivanovich">
+                    </li>
+                    <li>
+                        <label for="birthdate" ><span aria-label="required">*</span>Date of birh:</label>
+                        <input type="date" id="birthdate">
+                    </li>
+                    <li>
+                        <label for="sex"><span aria-label="required">*</span>Sex:</label>
+                            <input type="radio" name="sex" value="male" id="sex-m">
+                            <label for="sex-m"><strong>Male</strong></label>
+                            <input type="radio" name="sex" value="female" id="sex-f">
+                            <label for="sex-f"><strong>Female</strong></label>
+                    </li>
+                    <li>
+                        <label for="email" ><span aria-label="required">*</span>Email:</label>
+                        <input type="email" id="email" placeholder="ivanov-ivan1234@mail.com">
+                    </li>
+                    <li>
+                        <label for="password" ><span aria-label="required">*</span>Password:</label>
+                        <input type="password" id="password" placeholder="12345abcd@#$!">
+                    </li>
+                    <li>
+                        <label for="phone" >Phone:</label>
+                        <input type="tel" id="phone" placeholder="8 (123) 456 78-90">
+                    </li>
+                    <li>
+                        <label for="convenient-time" >Сonvenient time for communication:</label>
+                        <select id="convenient-time" name="convenient-time" placeholder="Ivanov">
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                            <option value="evening">Evening</option>
+                            <option value="night">Night</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <button type="submit" class="button">
+                            Send
+                        </button>
+                    </li>
+                </ul>
+                
+            </form>
+        </body>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="img/Logo.svg" alt="logo of the company">
+                <p>
+                    Agency
+                    <br><span>Creative</span>
+                </p>    
+            </div>
+            <div>
+                <p>Terms & policies</p>
+                <ul>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Company</p>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Contact</p>
+                <ul>
+                    <li><a href="">(+62) 893912392190</a></li>
+                    <li><a href="">agecnycr@gmail.com</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Location</p>
+                <address>
+                    PT Osiris Real Estate Internasional <br>
+                    Jl. KH. Wahid Hasyim Kel No.10D <br>
+                    Jakarta, Indonesia <br>
+                    <a href="">team@OsirisRealEstate.com</a>
+                </address>
+            </div>
+        </div>
+
+        <div class="contacts">
+            <a href=""><img src="img/facebook.svg" alt="facebook"></a>
+            <a href=""><img src="img/instagram.svg" alt="instagram"></a>
+            <a href=""><img src="img/linkedin.svg" alt="linkedin"></a>
+            <a href=""><img src="img/mail.svg" alt="mail"></a>
+            <a href=""><img src="img/twitter.svg" alt="twitter"></a>
+        </div>
+
+        <p class="copyright">Copyright @ 2022 Agency Creative. All Right Reserved</p>
+    </footer>
+</body>
+</html>
