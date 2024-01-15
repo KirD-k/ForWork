@@ -214,7 +214,7 @@ span{
     text-wrap:nowrap;
 }
 
-.testimonial{
+.testimonial div{
     display: flex;
     background-color: rgba(11, 15, 21, 1);
     border-radius: 6vw;
@@ -240,6 +240,8 @@ span{
     font-size: var(--smaller-text);
     line-height: var(--line-small);
     text-align: center;
+    text-wrap: nowrap;
+    margin-block: revert;
 }
 
 .testimonial div span{
@@ -342,7 +344,7 @@ footer .logo img{
 .services li:hover, .services li:focus{
     background-color: rgba(13, 22, 35, 1);
 }
-/*
+
 @media screen and (orientation: portrait){
     .landscape{
         display: none;
@@ -427,7 +429,7 @@ footer .logo img{
         }
     }
 
-}*/
+}
 
 @media screen and (orientation: landscape){
     
@@ -512,13 +514,19 @@ footer .logo img{
         width: 24vw;
     }
 
-    .testimonial{
+    .testimonial div{
         display: flex;
     }
 
     .contacts img{
         width: 5vw;
         margin-inline: 1%;
+    }
+
+    footer .logo {
+        width: 14vw;
+        height: 2vw;
+        border-radius: 4vw;
     }
 
     @media (min-width: 768px) {
